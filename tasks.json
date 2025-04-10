@@ -1,0 +1,19 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "task": "Lavar la loza",
+      "done": true
+    },
+    {
+      "id": "2",
+      "task": "Tender la cama",
+      "done": true
+    },
+    {
+      "id": "6953.053121477459",
+      "task": "Planchar la ropa",
+      "done": true
+    }
+  ]
+}
