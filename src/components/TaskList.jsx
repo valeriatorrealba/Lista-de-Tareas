@@ -1,4 +1,4 @@
-export default function TaskList({ tasks, deleteTask, completeTask }) {
+function TaskList({ tasks, deleteTask, completeTask }) {
     return(
         <ul className="list-group">
             {tasks.map((task) => (
@@ -15,3 +15,5 @@ export default function TaskList({ tasks, deleteTask, completeTask }) {
         </ul>
     )
 }
+
+export default TaskList;

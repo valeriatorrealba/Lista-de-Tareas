@@ -1,18 +1,19 @@
 import { useState } from "react";
 
-export default function TaskForm({ addTask }) {
-    const [task, setTask] = useState('');
+function TaskForm({ addTask}) {
+    const [taskText, setTaskText] = useState("");
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        addTask(task);
-        setTask('');
+        addTask(taskText);
+        setTaskText('');
     }
     return (
         <form onSubmit={handleSubmit} className="d-flex gap-2 mb-3">
             <input
                 type="text"
-                value={task}
-                onChange={(e) => setTask(e.target.value)}
+                value={taskText}
+                onChange={(e) => setTaskText(e.target.value)}
                 placeholder="Agregar tarea"
                 className="form-control"
                 name="task"
@@ -22,3 +23,5 @@ export default function TaskForm({ addTask }) {
         </form>
     );
 }
+
+export default TaskForm;
